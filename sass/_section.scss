@@ -1,0 +1,33 @@
+.header{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 10px;
+    border-bottom: gray solid 1px;
+    color: #000000;
+    justify-content: space-between;
+}
+
+.section{
+    align-items: center;
+    text-align: center;
+    margin-left: 15%;
+    width: 70%;
+
+    &__table {
+        width: 100%;
+        border-radius: 0.375rem;
+        border: solid .0001rem #b6b6b6;
+        overflow: auto;
+    }
+
+    @media (max-width:768px) {
+        margin-left: 5%;
+        width: 90%;
+    }
+    @media (max-width:530px) {
+        margin-left: 1%;
+        width: 98%;
+    }
+}
+

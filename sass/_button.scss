@@ -1,0 +1,35 @@
+.button {
+    margin-top: 1rem;
+    padding: 10px 10px;
+    width: 8rem;
+    background-color: #EE2B7B;
+    color: #fff;
+    border: 1px solid #EE2B7B;
+    border-radius: 15px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: transparent;
+        color: #EE2B7B;
+    }
+    
+}
+
+
+.btnCircle {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 99px;
+    border: solid 0.5px rgb(31 41 55);
+    background-color: transparent;
+    color: rgb(31 41 55);
+    margin-right: .5rem; 
+    cursor: pointer;
+
+    &:hover {
+        color: #EE2B7B;
+        border: solid 0.5px #EE2B7B;
+        transform: scale(1.1);
+    }
+}
+

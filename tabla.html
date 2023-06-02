@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimum-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./sass/general.css">
+    <title>Table</title>
+</head>
+<body>
+    <div class="header">
+        <div>
+            <img src="./img/logo.svg" alt="" srcset="">
+        </div>
+        <div>
+            <b>Hola, <span>Juan Correa</span></b> (Líder)
+        </div>
+    </div>
+    <div class="section">
+        <h2 class="title">Registro Datos</h2>
+        <div class="section__table">
+            <table class="table" id="gastos">
+                <thead class="table__header">
+                    <tr>
+                        <th class="table__element">ID</th>
+                        <th class="table__element">Cantidad</th>          
+                        <th class="table__element">Categoria</th>
+                        <th class="table__element">Descripción</th>   
+                        <th></th> 
+                    </tr>
+                </thead>
+                <tbody id="table__body">
+                </tbody>
+            </table>
+        </div> 
+        <button id="btn-abrir-modal" class="button">Registrar Gastos</button>
+    </div>
+    <div class="section">  
+        <dialog id="modal" > 
+            <form id="add-gasto" class="form" action="#">
+                <h2 class="title">Registro Datos</h2>
+                <input class="input" type="number" name="cantidad" id="cantidad" placeholder="Cantidad"><br><br>
+            
+                <select class="input" name="categoria" id="categoria" placeholder="Categoria">
+                <option value="">Seleccionar...</option>
+                <option value="Transporte">Transporte</option>
+                <option value="Alimentacion">Alimentacion</option>
+                <option value="Ocio">Ocio</option>
+                </select><br><br>
+            
+                <textarea class="input input--textarea" id="comentarios"name="comentarios" rows="4" cols="50" placeholder="Descripción"></textarea><br><br>
+            
+                <button id="btn-cerrar-modal" class="button" type="submit" value="Guardar">
+                Guardar</button>
+                </form>
+        </dialog> 
+    </div>
+
+    <script src="https://kit.fontawesome.com/e9685f6155.js" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
